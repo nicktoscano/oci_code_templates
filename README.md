@@ -6,7 +6,7 @@ Before using a new data science notebook, you need to perform a few setup proced
 
 1. Create a notebook config file
 
-## Create a Config File:
+### Create a Config File:
 * Open a new terminal in Oracle Data Science notebook session
   
 * Create a folder named .oci under the /home/datascience
