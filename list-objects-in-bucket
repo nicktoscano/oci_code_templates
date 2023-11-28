@@ -1,3 +1,6 @@
+import oci
+from oci.object_storage import ObjectStorageClient
+
 #----List Objects on First Page in Bucket----#
 
 config = oci.config.from_file('~/.oci/config')
