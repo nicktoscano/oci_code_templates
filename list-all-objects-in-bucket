@@ -1,0 +1,24 @@
+#----List All Objects in Bucket----#
+
+# Return a paginated list of all objects in bucket.
+
+object_storage_client = ObjectStorageClient(config)
+
+list_files = oci.pagination.list_call_get_all_results(
+    namespace_name=namespace_name, 
+    bucket_name=bucket_name, 
+    list_func_ref=object_storage_client.list_objects
+)
+
+file_name = []
+
+for item in list_files.data.objects:
+    res = object_storage_client.head_object(
+        namespace_name=namespace_name, 
+        bucket_name=bucket_name, 
+        object_name=item.name
+    )
+
+    file_name.append(item.name)
+
+print(len(file_name))
