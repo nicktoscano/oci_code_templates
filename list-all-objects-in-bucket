@@ -1,3 +1,6 @@
+import oci
+from oci.object_storage import ObjectStorageClient
+
 #----List All Objects in Bucket----#
 
 # Return a paginated list of all objects in bucket.
