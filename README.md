@@ -18,21 +18,21 @@ Before using a new data science notebook, you need to perform a few setup proced
 
 The format for the config file should be as follows:
 
-## Format:
+#### Format:
 [DEFAULT]
-user=user-ocid 
-fingerprint=fingerprint 
-tenancy=tenancy-ocid 
-region=your-service-oci-region
-key_file=<path-to-your-private-keyfile>
+<p> user=user-ocid  <p>
+<p> fingerprint=fingerprint  <p>
+<p> tenancy=tenancy-ocid  <p>
+<p> region=your-service-oci-region <p>
+<p> key_file=<path-to-your-private-keyfile>  <p>
 
-## Example:
+#### Example:
 [DEFAULT]
-user=ocid9.user.oc9..zzzzzzzzzzzjzjzjzhjkzgzjhglgzliuogyoyaglifueqwfhrkjq
-fingerprint=12:45:23:w8:34:67:4d:94:71:43:11:4r:g1:82:4t:5y
-tenancy=ocid9.tenancy.oc9..akqjawesfbdnalkjdfhalsiuheraahkjaksdjhfliaueha
-region=us-ashburn-1
-key_file=~/.ssh/your-file.pem
+<p> user=ocid9.user.oc9..zzzzzzzzzzzjzjzjzhjkzgzjhglgzliuogyoyaglifueqwfhrkjq <p>
+<p> fingerprint=12:45:23:w8:34:67:4d:94:71:43:11:4r:g1:82:4t:5y  <p>
+<p> tenancy=ocid9.tenancy.oc9..akqjawesfbdnalkjdfhalsiuheraahkjaksdjhfliaueha  <p>
+<p> region=us-ashburn-1  <p>
+<p> key_file=~/.ssh/your-file.pem  <p>
 
   
 Note: If you have not already added an API key to your cloud profile, you will need to complete this step first. 
