@@ -20,11 +20,11 @@ The format for the config file should be as follows:
 
 #### Format:
 [DEFAULT]
-<p> user=user-ocid  <p>
-<p> fingerprint=fingerprint  <p>
-<p> tenancy=tenancy-ocid  <p>
-<p> region=your-service-oci-region <p>
-<p> key_file=<path-to-your-private-keyfile>  <p>
+<br> user=user-ocid <br>
+<p> fingerprint=fingerprint <br>
+<p> tenancy=tenancy-ocid <br>
+<p> region=your-service-oci-region<br>
+<p> key_file=<path-to-your-private-keyfile> </p>
 
 #### Example:
 [DEFAULT]
@@ -39,7 +39,7 @@ Note: If you have not already added an API key to your cloud profile, you will n
 You can create create a pem file manually using the terminal in Data Science (see steps below), or you can 
 create the file under your user profile in the cloud console. Go to Identity/Users/User Details/API Keys.
 
-## Manually create pem file:
+### Manually Create .pem file:
 
 * Generate an API signing Key
   ```
