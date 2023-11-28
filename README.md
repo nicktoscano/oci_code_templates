@@ -10,9 +10,11 @@ Before using a new data science notebook, you need to perform a few setup proced
 * Open a new terminal in Oracle Data Science notebook session
   
 * Create a folder named .oci under the /home/datascience
+  ```
   $ mkdir ~/.oci
   $ cd .oci
   $ vi config
+  ```
 
 * Paste the config file contents and exit vi.
   * To paste in vi first enter insert mode by pushing 'i'.
