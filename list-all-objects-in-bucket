@@ -1,4 +1,4 @@
-#----List All Objects in Bucket----#
+### List All Objects in Bucket
 
 import oci
 from oci.object_storage import ObjectStorageClient
