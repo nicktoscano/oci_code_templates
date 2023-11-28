@@ -1,21 +1,31 @@
-    config = oci.config.from_file('~/.oci/config')
-    # List Objects in Bucket
-    object_storage_client = ObjectStorageClient(config)
-    object_list = object_storage_client.list_objects(
-    namespace_name = namespace_name,
-    bucket_name = bucket_name,
-    prefix = input_prefix
-    )
+#----List Objects on First Page in Bucket----#
 
-    # Create List of All Testing Images
-    image_list = []
-    for i in object_list.data.objects:
-        if i.name.endswith('.jpg'):
-            object_location = ObjectLocation()
-            object_location.bucket_name = bucket_name
-            object_location.namespace_name = namespace_name
-            object_location.object_name= i.name
-            image_list.append(object_location)     
-    print("Number of images in bucket", len(image_list))
+config = oci.config.from_file('~/.oci/config')
+
+print("This function only lists the first page of objects in the bucket")
+print("Use function listAllObjects to get a paginated list.")
+
+# List Objects in Bucket
+
+object_storage_client = ObjectStorageClient(config)
+object_list = object_storage_client.list_objects(
+namespace_name = namespace_name,
+bucket_name = bucket_name,
+prefix = input_prefix
+)
+
+# Create List of All Testing Images
+
+image_list = []
+
+for i in object_list.data.objects:
+    if i.name.endswith('.jpg'):
+        object_location = ObjectLocation()
+        object_location.bucket_name = bucket_name
+        object_location.namespace_name = namespace_name
+        object_location.object_name= i.name
+        image_list.append(object_location)  
+
+print("Number of images in bucket", len(image_list))
 
 
