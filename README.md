@@ -15,7 +15,10 @@ Before using a new data science notebook, you need to perform a few setup proced
   $ vi config
 
 * Paste the config file contents and exit vi.
+  * To paste in vi first enter insert mode by pushing 'i'.
+  * To exit vi hit esc. Then hit 'w' and 'q'. Press Enter.
 
+## Example Config File:
 The format for the config file should be as follows:
 
 #### Format:
