@@ -19,27 +19,27 @@ Before using a new data science notebook, you need to perform a few setup proced
 The format for the config file should be as follows:
 
 #### Format:
-[DEFAULT]
+[DEFAULT] <br/>
 user=user-ocid <br/>
 fingerprint=fingerprint <br/>
 tenancy=tenancy-ocid <br/>
 region=your-service-oci-region <br/>
-key_file= <path-to-your-private-keyfile>
+key_file=path-to-your-private-keyfile
 
 #### Example:
-[DEFAULT]
-<p> user=ocid9.user.oc9..zzzzzzzzzzzjzjzjzhjkzgzjhglgzliuogyoyaglifueqwfhrkjq <p>
-<p> fingerprint=12:45:23:w8:34:67:4d:94:71:43:11:4r:g1:82:4t:5y  <p>
-<p> tenancy=ocid9.tenancy.oc9..akqjawesfbdnalkjdfhalsiuheraahkjaksdjhfliaueha  <p>
-<p> region=us-ashburn-1  <p>
-<p> key_file=~/.ssh/your-file.pem  <p>
+[DEFAULT] <br/>
+user=ocid9.user.oc9..zzzzzzzzzzzjzjzjzhjkzgzjhglgzliuogyoyaglifueqwfhrkjq <br/>
+fingerprint=12:45:23:w8:34:67:4d:94:71:43:11:4r:g1:82:4t:5y <br/>
+tenancy=ocid9.tenancy.oc9..akqjawesfbdnalkjdfhalsiuheraahkjaksdjhfliaueha <br/>
+region=us-ashburn-1 <br/>
+key_file=~/.ssh/your-file.pem  
 
-  
+
 Note: If you have not already added an API key to your cloud profile, you will need to complete this step first. 
 You can create create a pem file manually using the terminal in Data Science (see steps below), or you can 
 create the file under your user profile in the cloud console. Go to Identity/Users/User Details/API Keys.
 
-### Manually Create .pem file:
+## Manually Create .pem file:
 
 * Generate an API signing Key
   ```
