@@ -24,7 +24,7 @@ user=user-ocid
 fingerprint=fingerprint 
 tenancy=tenancy-ocid 
 region=your-service-oci-region
-key_file=<path to your private keyfile>
+key_file=<path-to-your-private-keyfile>
 
 ## Example:
 [DEFAULT]
@@ -42,7 +42,7 @@ create the file under your user profile in the cloud console. Go to Identity/Use
 ## Manually create pem file:
 
 * Generate an API signing Key
-  $ openssl genrsa -out ~/.oci/oci_api_key.pem -aes128 2048
+  '''$ openssl genrsa -out ~/.oci/oci_api_key.pem -aes128 2048'''
 
 * Generate the public key
   $ openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pem
