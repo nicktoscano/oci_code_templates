@@ -42,15 +42,19 @@ create the file under your user profile in the cloud console. Go to Identity/Use
 ## Manually create pem file:
 
 * Generate an API signing Key
-  '''
+  ```
   $ openssl genrsa -out ~/.oci/oci_api_key.pem -aes128 2048
-  '''
+  ```
 
 * Generate the public key
+  ```
   $ openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pem
+  ```
 
 * Generate is the key's fingerprint
+  ```
   $ openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key.pem | openssl md5 -c
+  ```
 
 * I recommend downloading the keys and storing them for later use. You will need to load them into the user cloud console.
   Also, you can reuse these keys in other notebooks.
@@ -61,7 +65,9 @@ create the file under your user profile in the cloud console. Go to Identity/Use
 
 * Upload the public key file. You can also choose to paste the public key file if you copied it.
   You can copy the public key int he terminal using:
+  ```
   $ $ pbcopy < ~/.ssh/keyname.pub
+  ```
 
 * Once created, view the details of the key file. You can copy all the infomration required for the config file from here.
 
