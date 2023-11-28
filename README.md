@@ -20,11 +20,11 @@ The format for the config file should be as follows:
 
 #### Format:
 [DEFAULT]
-<p> user=user-ocid <br>
-fingerprint=fingerprint <br>
-tenancy=tenancy-ocid <br>
-region=your-service-oci-region <br>
-key_file= /*<path-to-your-private-keyfile>/* <p>
+user=user-ocid <br/>
+fingerprint=fingerprint <br/>
+tenancy=tenancy-ocid <br/>
+region=your-service-oci-region <br/>
+key_file= <path-to-your-private-keyfile>
 
 #### Example:
 [DEFAULT]
